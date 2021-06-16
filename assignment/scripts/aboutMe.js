@@ -91,6 +91,8 @@ if(petsOwned > friendsPets){
   mostPets = petsOwned
 } else if(petsOwned < friendsPets){
   mostPets = friendsPets
+}else if(petsOwned === friendsPets){
+  console.log("You have as much pets as your friends.")
 }
 
 
