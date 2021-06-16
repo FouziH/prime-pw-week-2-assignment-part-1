@@ -100,6 +100,7 @@ if(petsOwned > friendsPets){
 //console.log(mostPets);
 
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
+mostPets = true;
 switch(mostPets){
 case (petsOwned > friendsPets):
 console.log( `${mostPets = petsOwned}`);
