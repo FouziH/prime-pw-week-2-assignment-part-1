@@ -85,25 +85,36 @@ if(petsOwned < allowedPets){
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
-let mostPets;
+let mostPets = 0;
 
 if(petsOwned > friendsPets){
-  mostPets = petsOwned
+  mostPets = petsOwned;
 } else if(petsOwned < friendsPets){
-  mostPets = friendsPets
+  mostPets = friendsPets;
 }else if(petsOwned === friendsPets){
-  console.log("You have as much pets as your friends.")
+  console.log(`You have ${petsOwned} which is as much pets as your friends ${friendsPets}`);
+}else {
+  console.log("There was an error. Please Identify and fix the issue in your code. ");
 }
 
+//console.log(mostPets);
 
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
-switch (mostPets) {
-  case expression:
-
-    break;
-  default:
-
+switch(mostPets){
+case (petsOwned > friendsPets):
+console.log( `${mostPets = petsOwned}`);
+break;
+case (petsOwned < friendsPets):
+console.log(mostPets = friendsPets);
+break;
+case (petsOwned === friendsPets):
+console.log(`You have ${petsOwned} which is as much pets as your friends ${friendsPets}`);
+break;
+default:
+console.log("There was an error. Please Identify and fix the issue in your code. ");
+break;
 }
+console.log(mostPets);
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 //condition ? exprIfTrue : exprIfFalse
