@@ -33,7 +33,7 @@ let favFood = "Steak";
 
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
 
-let petsOwned = 2;
+let petsOwned = 4;
 
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
 let friendsPets = 3;
@@ -44,7 +44,7 @@ petsOwned+=2;
 
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 
-let allowedPets = 1;
+let allowedPets = 3;
 
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!",
 // if it's not true, console log "How about we stay home?"
@@ -85,7 +85,7 @@ if(petsOwned < allowedPets){
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
-let mostPets;
+let mostPets = true;
 
 if(petsOwned > friendsPets){
    mostPets = petsOwned;
@@ -97,22 +97,22 @@ if(petsOwned > friendsPets){
   console.log("There was an error. Please Identify and fix the issue in your code. ");
 }
 
-//console.log(mostPets);
+console.log(mostPets);
 
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
-mostPets = true;
+
 switch(mostPets){
 case (petsOwned > friendsPets):
-console.log( `${mostPets = petsOwned}`);
+mostPets = petsOwned;
 break;
 case (petsOwned < friendsPets):
-console.log(mostPets = friendsPets);
+mostPets = friendsPets
 break;
 case (petsOwned === friendsPets):
-console.log(`You have ${petsOwned} which is as much pets as your friends ${friendsPets}`);
+mostPets =`You have ${petsOwned} which is as much pets as your friends ${friendsPets}`;
 break;
 default:
-console.log("There was an error. Please Identify and fix the issue in your code. ");
+ mostPets =  "There was an error. Please Identify and fix the issue in your code. ";
 break;
 }
 console.log(mostPets);
